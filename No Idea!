@@ -1,0 +1,10 @@
+def take():
+    return map(int,input().split())
+n,m=take()
+array,a,b,happiness=list(take()),set(take()),set(take()),0
+for item in array:
+    if item in a:
+        happiness+=1
+    if item in b:
+        happiness-=1    
+print(happiness)  
