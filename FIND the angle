@@ -1,0 +1,5 @@
+from math import acos, degrees
+AB=int(input())
+BC=int(input())
+AC=(AB**2+BC**2)**.5
+print(str(round(degrees(acos(BC/AC))))+'°')
