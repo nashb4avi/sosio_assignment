@@ -1,0 +1,13 @@
+n=int(input())
+list1,list2=[],[]
+dictlist={}
+for i in range(n):
+    list1.append(input())
+for string in list1:
+    if string not in dictlist.keys():
+        dictlist[string]=1
+    else:
+        dictlist[string]+=1       
+print(len(dictlist.keys()))   
+for string in dictlist.values():
+    print(string,end=' ')
