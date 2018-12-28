@@ -1,3 +1,10 @@
+'''In a right triangle, the median drawn to the hypotenuse 
+has the measure half the hypotenuse.
+If in a triangle a median has the measure half the length of 
+the side it is drawn to, then the triangle is a right triangle.
+In a right triangle, the median drawn to the hypotenuse 
+divides the triangle in two isosceles triangles.''' 
+
 from math import acos, degrees
 AB=int(input())
 BC=int(input())
