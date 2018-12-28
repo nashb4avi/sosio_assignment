@@ -4,43 +4,25 @@
 #the total no of words that are generated is (6-1)=5
 # 1)A 2)AN 3)ANA 4)ANAN 5)ANANA
 def minion_game(string):
-    # your code goes here
     vowels=('AEIOU')
     count1=0
     count2=0
-    for i in range(len(string)):
-        if string[i] in vowels:
-            count1=count1+len(string)-i         
-        else:                                  
-            count2=count2+len(string)-i     
+    count3=0
+    for char in string:
+        
+        if char in vowels:
+            
+            count1=count1+(len(string)-count3)
+        else:
+            count2=count2+(len(string)-count3)
+        count3=count3+1 
     if count2>count1:
         print("Stuart "+str(count2))
     elif count2==count1:
         print('Draw')
     else:
-        print("Kevin "+str(count1))
+        print("Kevin "+str(count1))  
     
-
-  
-    
-
-      
-
-                    
-
-
-if __name__ == '__main__':
-    s = input()
-    minion_game(s)  
-    
-
-  
-    
-
-      
-
-                    
-
 
 if __name__ == '__main__':
     s = input()
