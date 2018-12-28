@@ -1,0 +1,6 @@
+from itertools import groupby
+n=input()
+b=[int(k) for k, g in groupby(n)]
+c=[len(list(g)) for k, g in groupby(n)]
+for i in range(len(b)):
+    print('({}, {})'.format(c[i],b[i]),end=' ')
