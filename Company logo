@@ -1,0 +1,27 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+def logo(string):
+    list1=[]
+    string=string.lower()
+    sing=set(string)
+    for char in sing:
+        list1.append(((string.count(char),-ord(char))))
+    list1=(sorted(list1)[::-1])
+    for i in range(3):
+        print("{} {}".format(chr(-list1[i][1]),list1[i][0]))
+
+    
+     
+        
+
+
+
+
+if __name__ == '__main__':
+    s = input()
+    logo(s)
