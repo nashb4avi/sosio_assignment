@@ -1,0 +1,16 @@
+#!/bin/python3
+def sortlist(a,k):
+    a.sort(key=lambda x:x[k])
+    return a
+nm = input().split()
+n = int(nm[0])
+m = int(nm[1])
+arr = []
+for _ in range(n):
+    arr.append(list(map(int, input().rstrip().split())))
+k = int(input())
+sortlist(arr,k)
+for i in range(n):
+    for element in arr[i]:
+        print(element,end=' ')
+    print("\r")   
