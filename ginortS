@@ -1,0 +1,14 @@
+n=input()
+U,L,O,E='','','',''
+
+for char in n:
+    if char.isupper():
+        U=U+char
+    elif char.islower():
+        L=L+char
+    elif char.isnumeric():
+        if int(char)%2!=0 :
+            O=O+str(char)
+        else:
+            E=E+str(char)
+print(''.join(sorted(L))+''.join(sorted(U))+''.join(sorted(O))+''.join(sorted(E)))
