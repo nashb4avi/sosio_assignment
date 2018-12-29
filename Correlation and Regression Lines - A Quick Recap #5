@@ -1,0 +1,10 @@
+# ANSWER =16.0
+
+#code
+slopeof_y_on_x=4/5
+slopeof_x_on_y=9/20
+r=(slopeof_y_on_x*slopeof_x_on_y)**.5 
+σx=3
+σy=slopeof_y_on_x*σx/r
+variance_y=σy**2
+print(variance_y)
