@@ -1,0 +1,10 @@
+ph_scores=[15,12,8,8,7,7,7,6,5,3]
+his_scores=[10,25,17,11,13,17,20,13,9,15]
+m_p=sum(ph_scores)/len(ph_scores)  #mean of physics scores
+m_h=sum(his_scores)/len(his_scores)  #mean of history scores
+a1,a2=0,0
+for i in range(len(his_scores)):
+    a1+=(ph_scores[i]-m_p)**2               # sum of squares of independent variable physics
+    a2+=(ph_scores[i]-m_p)*(his_scores[i]-m_h)  #sum of product
+slope=a2/a1
+print(round(slope,3))
